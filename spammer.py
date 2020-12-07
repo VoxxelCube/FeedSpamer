@@ -33,9 +33,9 @@ if __name__ == "__main__":
 
     if pages > 1:
         for i in range(pages):
-            par.parse(f'https://www.avito.ru/rossiya?p={i}&q={search}', res)
+            par.parse(f'https://www.avito.ru/rossiya?p={i}&q={search}&s=104', res)
     else:
-        par.parse(f'https://www.avito.ru/rossiya?q={search}', res)
+        par.parse(f'https://www.avito.ru/rossiya?q={search}&s=104', res)
     
     for result in res:
         
